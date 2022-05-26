@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57058CF8-D18B-42D6-B11F-03C8C71405A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>zapatos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>zapatos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>zapatos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.vb">
+      <DependentUpon>inicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\altasproductos.Designer.vb">
+      <DependentUpon>altasproductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\altasproductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\altasproveedor.Designer.vb">
+      <DependentUpon>altasproveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\altasproveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\altasusuario.Designer.vb">
+      <DependentUpon>altasusuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\altasusuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\altasadministrador.Designer.vb">
+      <DependentUpon>altasadministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\altasadministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\bajasadministrador.Designer.vb">
+      <DependentUpon>bajasadministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\bajasadministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\bajasproductos.Designer.vb">
+      <DependentUpon>bajasproductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\bajasproductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\bajasproveedor.Designer.vb">
+      <DependentUpon>bajasproveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\bajasproveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\bajasusuario.Designer.vb">
+      <DependentUpon>bajasusuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\bajasusuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\consultasadministrador.Designer.vb">
+      <DependentUpon>consultasadministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\consultasadministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\consultasproductos.Designer.vb">
+      <DependentUpon>consultasproductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\consultasproductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\consultasproveedor.Designer.vb">
+      <DependentUpon>consultasproveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\consultasproveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\consultasusuario.Designer.vb">
+      <DependentUpon>consultasusuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\consultasusuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Menuu.Designer.vb">
+      <DependentUpon>Menuu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Menuu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\modifadministrador.Designer.vb">
+      <DependentUpon>modifadministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\modifadministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\modifiproveedor.Designer.vb">
+      <DependentUpon>modifiproveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\modifiproveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\modifproductos.Designer.vb">
+      <DependentUpon>modifproductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\modifproductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\modifusuario.Designer.vb">
+      <DependentUpon>modifusuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\modifusuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\ventas.Designer.vb">
+      <DependentUpon>ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\altasadministrador.resx">
+      <DependentUpon>altasadministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\altasproductos.resx">
+      <DependentUpon>altasproductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\altasproveedor.resx">
+      <DependentUpon>altasproveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\altasusuario.resx">
+      <DependentUpon>altasusuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bajasadministrador.resx">
+      <DependentUpon>bajasadministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bajasproductos.resx">
+      <DependentUpon>bajasproductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bajasproveedor.resx">
+      <DependentUpon>bajasproveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bajasusuario.resx">
+      <DependentUpon>bajasusuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\consultasadministrador.resx">
+      <DependentUpon>consultasadministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\consultasproductos.resx">
+      <DependentUpon>consultasproductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\consultasproveedor.resx">
+      <DependentUpon>consultasproveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\consultasusuario.resx">
+      <DependentUpon>consultasusuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Menuu.resx">
+      <DependentUpon>Menuu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\modifadministrador.resx">
+      <DependentUpon>modifadministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\modifiproveedor.resx">
+      <DependentUpon>modifiproveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\modifproductos.resx">
+      <DependentUpon>modifproductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\modifusuario.resx">
+      <DependentUpon>modifusuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ventas.resx">
+      <DependentUpon>ventas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altasadministr.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altasproduct.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altaproveedor.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bajaadministr.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altausuario.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ELI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bajasproduct.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bajasproveedor.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bajausuario.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consulproduct.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consultasadministrad.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consulusuario.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifadminis.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifiusuario.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifiproduct.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifiproveedor.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventaproduct.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novocalss1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Novoc%40lss.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
